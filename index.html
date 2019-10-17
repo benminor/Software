@@ -1,9 +1,126 @@
 <!DOCTYPE html>
+<title>Ben Minor</title>
 <html>
-<body style="background-color:powderblue;">
+<body style="background-color:#02192F;">
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<div class = "btnClass">
+<button class="topBtn">Contact</button>
+<button class="topBtn" style="left:75%">Projects</button>
+<button class="topBtn" style="left:65%">Experience</button>
+<button class="topBtn" style="left:55%">Education</button>
+<button class="resumeBtn" style="left:45%;">Resume</button>
+
+
+</div>
+<div class="topBox">
+  <div class="headerSub"> <h1>Ben Minor</h1> <h2>Student at Queen's Univeristy</h2></div>
+
+  I'm currently studying Computer Science at Queen's Univeristy, located in Kingston, Ontario. I'm majoring in
+  Artificial Intelligence and some relevant courses I'm taking are: <br>
+  <ul>
+  &#8702; Computer architecture <br>
+  &#8702; Logic systems <br>
+  &#8702; Discrete mathematics <br>
+  &#8702; Cognitive computation <br>
+  <button class="contactBtn">Contact Me </button>
+</ul>
+
+</div>
+</div>
+<p>
+</p>
 
 </body>
 </html>
+
+<style>
+  h1{
+    font-family: "Helvetica Neue";
+    color: #E8E8E9;
+    font-size: 400%;
+    margin: 0;
+    margin-top: 10%;
+  }
+  h2 {
+    font-family: "Helvetica Neue";
+    font-size: 200%;
+    margin-top: 0%;
+  }
+  .headerSub{
+    text-align: left;
+  }
+  .topBox{
+    width: 75%;
+    height: 100%;
+    background: #02192F;
+    border-radius: 10px;
+    margin: auto;
+    align-content: center;
+    border: 10px solid #02192F;
+
+    font-size: 20px;
+    font-family: "Avenir";
+    color: #8892B0;
+  }
+
+  .btnClass{
+  }
+
+  .topBtn{
+    background-color: #02192F;
+    border: none;
+    color: #00F0FF;
+    position: absolute;
+    text-align: center;
+    left: 80%;
+    font-family: "Courier New";
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .resumeBtn{
+    background-color: #02192F;
+    border: 2px solid #00F0FF;
+    color: #00F0FF;
+    position: absolute;
+    text-align: center;
+    left: 80%;
+    font-family: "Courier New";
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .contactBtn{
+    background-color: #02192F;
+    border: 2px solid #00F0FF;
+    color: #00F0FF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /*Added*/
+    text-align: center;
+    font-family: "Courier New";
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .resumeBtn:hover{
+     background: #082a4a;
+  }
+
+  .contactBtn:hover{
+     background: #082a4a;
+  }
+
+</style>
