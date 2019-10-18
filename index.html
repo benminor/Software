@@ -18,10 +18,10 @@
   I'm currently studying Computer Science at Queen's Univeristy, located in Kingston, Ontario. I'm majoring in
   Artificial Intelligence and some relevant experience I've had includes:
   <ul>
-  &#8702; Computer architecture <br>
-  &#8702; Logic systems <br>
-  &#8702; Discrete mathematics <br>
-  &#8702; Cognitive computation <br>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Computer architecture <br></p>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Logic systems <br></p>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Discrete mathematics <br></p>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Cognitive computation <br></p>
   <button class="contactBtn">Contact Me </button>
 </ul>
 </div>
@@ -32,7 +32,8 @@
 <div class="edClass">
 
   <h3>Education</h3> <hr class ="line1">
-  <h4>Bachelor of Computing Honours (BCmpH) in Artificial Intelligence @ Queen's University</h4>
+  <h4>Bachelor of Computing Honours (BCmpH) in Artificial Intelligence @
+    <a href="https://www.queensu.ca" target="_blank" class = "cLink">Queen's Univeristy</a></h4>
   <p class="desClass"> Relevant Coursework: Cognitive science, artificial intelligence, algorithm efficiency,
       discrete mathematics, linear algebra, data structures, computer architecture, neural networks
       <br>
@@ -54,9 +55,14 @@
 <br><br><br><br>
 <div class="workExpClass">
   <h3>Work Experience</h3><hr class="line1">
-  <h4>Computer & Software Technition @ DCR Systems Inc.</h4>
-  <p class="desClass"></p>
+  <h4>Computer & Software Technition @  <a href="http://www.dcr.ca" target="_blank" class = "cLink">DCR Systems Group Inc.</a></h4>
+    <ul>
+    <p class = "arrowClass"> &#62; <p class="desClass"> PC cloning/imaging with Symantec Ghost and Paragon Disk Manager <br></p>
+    <p class = "arrowClass"> &#62; <p class="desClass"> Configured and updated internal software and hardware resources <br></p>
+      <p class = "arrowClass"> &#62; <p class="desClass"> Provided dynamic software and hardware recommendations within product team <br></p>
+    </ul>
 
+</p>
 </div>
 
 </body>
@@ -89,6 +95,15 @@
     font-weight: 100;
     font-size: 95%;
     color: white;
+    margin-top: 0%;
+  }
+
+  .cLink{
+    text-decoration: none;
+    font-family: "Courier New";
+    font-weight: 100;
+    font-size: 95%;
+    color: #00F0FF;
     margin-top: 0%;
   }
 
@@ -161,7 +176,7 @@
   .edClass{
     align-content: left;
     margin-left: 12.5%;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background: #02192F;
     border-radius: 10px;
@@ -171,7 +186,7 @@
   .workExpClass{
     align-content: left;
     margin-left: 12.5%;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background: #02192F;
     border-radius: 10px;
@@ -186,9 +201,15 @@
     font-size: 16px;
     font-family: "Avenir";
     color: #8892B0;
-
+    display:inline;
   }
 
+  .arrowClass{
+    font-size: 16px;
+    font-family: "Avenir";
+    color: #00F0FF;
+    display:inline;
+  }
   .resumeBtn:hover{
      background: #082a4a;
   }
