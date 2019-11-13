@@ -6,12 +6,12 @@
 <div class = "btnClass">
 <button class="topBtn" style="left:90%">Contact</button>
 <button class="topBtn" style="left:80%">Projects</button>
-<button class="topBtn" style="left:70%">Experience</button>
+<button onclick="window.location.href = '#work';" class="topBtn" style="left:70%">Experience</button>
 <button onclick="window.location.href = '#education';" class="topBtn" style="left:60%">Education</button>
 <button class="resumeBtn" style="left:50%;">Resume</button>
 
 </div>
-<div class="topBox">
+<div class="topBox" style="background-color:#02192F">
 
   <div class="headerSub"> <h1>Ben Minor</h1> <h2>Student at Queen's Univeristy</h2></div>
 
@@ -29,8 +29,8 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div id="education">
-<div class="edClass" id ="education">
+<div id="education" style="background-color:#02192F">
+<div class="edClass" id ="education" style="background-color:#02192F">
 
   <h3>Education</h3> <hr class ="line1">
   <h4>Bachelor of Computing Honours (BCmpH) in Artificial Intelligence @
@@ -60,7 +60,7 @@
 </div>
 </div>
 <br><br><br><br>
-<div class="workExpClass">
+<div id = "work" class="workExpClass">
   <h3>Work Experience</h3><hr class="line1">
   <h4>Computer & Software Technician @  <a href="http://www.dcr.ca" target="_blank" class = "cLink">DCR Systems Group Inc.</a></h4>
   <h4 style="color: #00F0FF; margin:0;">May 2019 - August 2019</h4>
@@ -207,11 +207,13 @@ html {
   .workExpClass{
     align-content: left;
     margin-left: 12.5%;
+    margin-bottom: 50%;
     width: 60%;
     height: 100%;
     background: #02192F;
     border-radius: 10px;
     border: 10px solid #02192F;
+
   }
 
   hr.line1{
