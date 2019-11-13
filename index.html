@@ -7,12 +7,12 @@
 <button class="topBtn" style="left:90%">Contact</button>
 <button class="topBtn" style="left:80%">Projects</button>
 <button class="topBtn" style="left:70%">Experience</button>
-<button class="topBtn" style="left:60%">Education</button>
+<button onclick="window.location.href = '#education';" class="topBtn" style="left:60%">Education</button>
 <button class="resumeBtn" style="left:50%;">Resume</button>
-
 
 </div>
 <div class="topBox">
+
   <div class="headerSub"> <h1>Ben Minor</h1> <h2>Student at Queen's Univeristy</h2></div>
 
   I'm currently studying Computer Science at Queen's Univeristy, located in Kingston, Ontario. I'm majoring in
@@ -29,7 +29,8 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div class="edClass">
+<div id="education">
+<div class="edClass" id ="education">
 
   <h3>Education</h3> <hr class ="line1">
   <h4>Bachelor of Computing Honours (BCmpH) in Artificial Intelligence @
@@ -57,6 +58,7 @@
 </p>
 
 </div>
+</div>
 <br><br><br><br>
 <div class="workExpClass">
   <h3>Work Experience</h3><hr class="line1">
@@ -76,12 +78,20 @@
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+ }
+
+
 @font-face {
  font-family: Menlo;
  src: url("Menlo.ttc");
 }
 
-
+#education {
+  margin-top: 100%;
+  padding-bottom: 25%;
+ }
   h1{
     font-family: "Helvetica Neue";
     color: #E8E8E9;
