@@ -4,7 +4,7 @@
 <body style="background-color:#02192F;">
 
 <div class = "btnClass">
-<button class="topBtn" style="left:90%">Projects</button>
+<button onclick="window.location.href = '#projects';" class="topBtn" style="left:90%">Projects</button>
 <button onclick="window.location.href = '#work';" class="topBtn" style="left:80%">Experience</button>
 <button onclick="window.location.href = '#education';" class="topBtn" style="left:70%">Education</button>
 <button class="resumeBtn" onclick="window.location.href = '2019FallResumeV2.pdf'" style="left:60%;">Resume</button>
@@ -71,6 +71,20 @@
 
 </p>
 </div>
+
+<br><br><br><br>
+<div id = "projects" class="projectsClass">
+  <h3>Personal Projects</h3><hr class="line1">
+  <h4>Gravity Tap</h4>
+  <h4 style="color: #00F0FF; margin:0;">October 2019 - Present</h4>
+    <ul>
+    <p class = "arrowClass"> &#62; <p class="desClass"> Interactive 2D iOS game designed with Swift in XCode <br></p>
+    <p class = "arrowClass"> &#62; <p class="desClass"> Utilized SKPhysics and SKSpriteNode frameworks <br></p>
+    </ul>
+
+</p>
+</div>
+
 
 </body>
 </html>
@@ -216,7 +230,18 @@ html {
   .workExpClass{
     align-content: left;
     margin-left: 12.5%;
-    margin-bottom: 50%;
+    width: 60%;
+    height: 100%;
+    background: #02192F;
+    border-radius: 10px;
+    border: 10px solid #02192F;
+
+  }
+
+  .projectsClass{
+    align-content: left;
+    margin-left: 12.5%;
+    margin-bottom: 25%;
     width: 60%;
     height: 100%;
     background: #02192F;
@@ -232,7 +257,7 @@ html {
   .desClass{
     font-size: 16px;
     font-family: "Avenir";
-    color: #8892B0;
+    color: #e0e0e0;
     display:inline;
   }
 
