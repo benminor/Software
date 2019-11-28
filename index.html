@@ -6,22 +6,22 @@
 <div class = "btnClass">
 <button class="topBtn" style="left:90%">Contact</button>
 <button class="topBtn" style="left:80%">Projects</button>
-<button class="topBtn" style="left:70%">Experience</button>
-<button class="topBtn" style="left:60%">Education</button>
+<button onclick="window.location.href = '#work';" class="topBtn" style="left:70%">Experience</button>
+<button onclick="window.location.href = '#education';" class="topBtn" style="left:60%">Education</button>
 <button class="resumeBtn" style="left:50%;">Resume</button>
 
-
 </div>
-<div class="topBox">
+<div class="topBox" style="background-color:#02192F">
+
   <div class="headerSub"> <h1>Ben Minor</h1> <h2>Student at Queen's Univeristy</h2></div>
 
   I'm currently studying Computer Science at Queen's Univeristy, located in Kingston, Ontario. I'm majoring in
-  Artificial Intelligence and some relevant courses I'm taking are:
+  Artificial Intelligence and some relevant experience I've had includes:
   <ul>
-  &#8702; Computer architecture <br>
-  &#8702; Logic systems <br>
-  &#8702; Discrete mathematics <br>
-  &#8702; Cognitive computation <br>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Computer architecture <br></p>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Logic systems <br></p>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Discrete mathematics <br></p>
+  <p class = "arrowClass"> &#62; <p class="desClass"> Cognitive computation <br></p>
   <button class="contactBtn">Contact Me </button>
 </ul>
 </div>
@@ -29,21 +29,66 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div class="edClass">
+<div id="education" style="background-color:#02192F">
+<div class="edClass" id ="education" style="background-color:#02192F">
 
   <h3>Education</h3> <hr class ="line1">
-  <h4>Bachelor of Computing Honours (BCmpH) in Artificial Intelligence @ Queen's University</h4>
+  <h4>Bachelor of Computing Honours (BCmpH) in Artificial Intelligence @
+    <a href="https://www.queensu.ca" target="_blank" class = "cLink">Queen's Univeristy</a></h4>
+    <h4 style="color: #00F0FF; margin:0;">September 2018 - Present</h4><br>
+
   <p class="desClass"> Relevant Coursework: Cognitive science, artificial intelligence, algorithm efficiency,
-      discrete mathematics, linear algebra, data structures, computer architecture </p>
+      discrete mathematics, linear algebra, data structures, computer architecture, neural networks
+      <br>
+      <br>
+      cGPA: 3.6 <br>
+      Expected Graduation Date: May 2022
+
+    </p>
+    <br><br><br><br>
+
+  <h4>Markham District High School - Ontario Highschool Diploma</h4>
+  <h4 style="color: #00F0FF; margin:0;">September 2014 - June 2018</h4><br>
+
+  <p class = "desClass">Final year courses: Calculus and Vectors (98%), Chemistry (94%), English (93%),
+    Computer Science (92%), Advanced Functions (92%), Computer Engineering (92%), Physics (87%)
+    <br>
+    <br>
+    Final year average: 92.6%
+</p>
 
 </div>
-<p>
+</div>
+<br><br><br><br>
+<div id = "work" class="workExpClass">
+  <h3>Work Experience</h3><hr class="line1">
+  <h4>Computer & Software Technician @  <a href="http://www.dcr.ca" target="_blank" class = "cLink">DCR Systems Group Inc.</a></h4>
+  <h4 style="color: #00F0FF; margin:0;">May 2019 - August 2019</h4>
+    <ul>
+    <p class = "arrowClass"> &#62; <p class="desClass"> PC cloning/imaging with Symantec Ghost and Paragon Disk Manager <br></p>
+    <p class = "arrowClass"> &#62; <p class="desClass"> Configured and updated internal software and hardware resources <br></p>
+      <p class = "arrowClass"> &#62; <p class="desClass"> Provided dynamic software and hardware recommendations within product team <br></p>
+    </ul>
+
 </p>
+</div>
 
 </body>
 </html>
 
 <style>
+
+html {
+  scroll-behavior: smooth;
+ }
+
+
+@font-face {
+ font-family: Menlo;
+ src: url("Menlo.ttc");
+}
+
+
   h1{
     font-family: "Helvetica Neue";
     color: #E8E8E9;
@@ -66,10 +111,20 @@
   }
 
   h4{
-    font-family: "Courier New";
+    font-family: "Menlo";
     font-weight: 100;
-    font-size: 90%;
+    font-size: 95%;
     color: white;
+    margin-top: 0%;
+    margin:0;
+  }
+
+  .cLink{
+    text-decoration: none;
+    font-family: "Menlo";
+    font-weight: 100;
+    font-size: 95%;
+    color: #00F0FF;
     margin-top: 0%;
   }
 
@@ -97,7 +152,7 @@
     position: absolute;
     text-align: center;
     left: 80%;
-    font-family: "Courier New";
+    font-family: "Menlo";
     padding: 10px 0px;
     text-decoration: none;
     display: inline-block;
@@ -113,7 +168,7 @@
     position: absolute;
     text-align: center;
     left: 80%;
-    font-family: "Courier New";
+    font-family: "Menlo";
     padding: 8px 10px;
     text-decoration: none;
     display: inline-block;
@@ -130,7 +185,7 @@
     left: 50%;
     transform: translateX(-50%); /*Added*/
     text-align: center;
-    font-family: "Courier New";
+    font-family: "Menlo";
     padding: 10px 32px;
     text-decoration: none;
     display: inline-block;
@@ -142,11 +197,23 @@
   .edClass{
     align-content: left;
     margin-left: 12.5%;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background: #02192F;
     border-radius: 10px;
     border: 10px solid #02192F;
+  }
+
+  .workExpClass{
+    align-content: left;
+    margin-left: 12.5%;
+    margin-bottom: 50%;
+    width: 60%;
+    height: 100%;
+    background: #02192F;
+    border-radius: 10px;
+    border: 10px solid #02192F;
+
   }
 
   hr.line1{
@@ -157,9 +224,22 @@
     font-size: 16px;
     font-family: "Avenir";
     color: #8892B0;
-
+    display:inline;
   }
 
+  .dateClass{
+    font-size: 16px;
+    font-family: "Avenir";
+    color: #8892B0;
+    display:inline;
+  }
+
+  .arrowClass{
+    font-size: 16px;
+    font-family: "Avenir";
+    color: #00F0FF;
+    display:inline;
+  }
   .resumeBtn:hover{
      background: #082a4a;
   }
